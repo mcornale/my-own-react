@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.app {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 44rem;
+}
+
+.app-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.counter {
+  background-color: #efefef;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-value {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.counter-button {
+  appearance: none;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+
+  background-color: #333;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  font-weight: 500;
+}

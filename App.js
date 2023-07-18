@@ -3,8 +3,8 @@ import { createElement, useState } from './react';
 function App() {
   return createElement(
     'div',
-    {},
-    createElement('h1', {}, 'My Own React App'),
+    { className: 'app' },
+    createElement('h1', { className: 'app-title' }, 'My Own React'),
     Counter()
   );
 }
@@ -14,9 +14,13 @@ function Counter() {
 
   return createElement(
     'div',
-    {},
-    createElement('p', {}, `Count: ${count}`),
-    createElement('button', { onClick: () => setCount(count + 1) }, 'Increment')
+    { className: 'counter' },
+    createElement('p', { className: 'counter-value' }, `Count: ${count}`),
+    createElement(
+      'button',
+      { className: 'counter-button', onClick: () => setCount(count + 1) },
+      'Increment'
+    )
   );
 }
 
